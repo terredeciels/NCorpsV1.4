@@ -1,0 +1,29 @@
+package application.tools2D;
+
+import javafx.scene.layout.Region;
+
+public class Particule2D extends Region {
+
+    public final Vector2D v;
+    public final Vector2D a;
+    public final Vector2D X;
+    public double m;
+
+    public Particule2D(double masse, Vector2D position, Vector2D velocity, Vector2D acceleration) {
+        m = masse;
+        v = velocity;
+        a = acceleration;
+        X = position;
+    }
+
+//    public void move() {
+//        v.add(a);
+//        X.add(v);
+//
+//        // angle: towards velocity (ie target)
+//        //angle = velocity.angle();
+//        // clear acceleration
+//        a.multiply(0);
+//    }
+
+}
