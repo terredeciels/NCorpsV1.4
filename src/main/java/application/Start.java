@@ -1,6 +1,5 @@
 package application;
 
-import application.collision.Animation1;
 import javafx.application.Application;
 import javafx.scene.Scene;
 import javafx.scene.canvas.Canvas;
@@ -40,21 +39,13 @@ public class Start extends Application {
         v.setStrokeWidth(0.3);
         layerPane.getChildren().add(h);
         layerPane.getChildren().add(v);
-        /**
-         * Node toolbar = Settings.get().createToolbar();
-         * root.setRight(toolbar);
-         */
         Scene scene = new Scene(root, W, H);
         primaryStage.setScene(scene);
         primaryStage.setTitle("N Particules");
         primaryStage.show();
 
         Animation0 anim = new Animation0(this);
-        //  new Gui(anim).setVisible(true);
         anim.start();
-//        Animation1 anim = new Animation1(this);
-//        //  new Gui(anim).setVisible(true);
-//        anim.start();
     }
 
 }

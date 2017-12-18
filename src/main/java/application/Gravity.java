@@ -7,7 +7,7 @@ import java.util.List;
 
 import static application.tools2D.Vector2D.subtract;
 import static java.lang.Math.pow;
-import static setting.Constants.*;
+import static setting.Constants.M_centre;
 import static setting.Constants.dist_collision;
 
 class Gravity {
@@ -20,7 +20,7 @@ class Gravity {
         this.allParticules = allParticules;
         this.deltaT = deltaT;
         this.allParticules_1 = new ArrayList<>();
-        allParticules.forEach(p -> acc(p));
+        allParticules.forEach(this::acc);
     }
 
     private void acc(Particule2D p) {

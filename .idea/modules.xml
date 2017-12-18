@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/NCorpsV1.4.iml" filepath="$PROJECT_DIR$/NCorpsV1.4.iml" />
-      <module fileurl="file://$PROJECT_DIR$/particule1.1.iml" filepath="$PROJECT_DIR$/particule1.1.iml" />
     </modules>
   </component>
 </project>

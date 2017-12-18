@@ -10,7 +10,6 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Circle;
 
 import java.util.ArrayList;
-import javafx.scene.shape.Line;
 
 import static setting.Constants.*;
 
@@ -18,7 +17,6 @@ public class Animation0 extends AddParticules {
 
     private final GraphicsContext graphicsContext;
     private Image particuleImg;
-    private Image vitesseImg;
 
     Animation0(final Start start) {
 
@@ -30,10 +28,6 @@ public class Animation0 extends AddParticules {
             addParticule();
         }
         addParticule_0();
-//        addParticule_1();
-
-//        graphicsContext.setFill(graphicsContextsetFill);
-//        graphicsContext.fillRect(0, 0, W, H);
     }
 
     @Override
@@ -44,12 +38,10 @@ public class Animation0 extends AddParticules {
 
         graphicsContext.setFill(graphicsContextsetFill);
         graphicsContext.fillRect(0, 0, W, H);
-        
+
         g.allParticules_1.forEach((p) -> {
             particuleImg = createImage(createParticleImg(p));
-//            vitesseImg = createImage(createVitesseImg(p));
             graphicsContext.drawImage(particuleImg, p.X.x, p.X.y);
-//            graphicsContext.drawImage(vitesseImg, p.X.x, p.X.y);
 
         });
         allParticles = g.allParticules_1;
@@ -73,19 +65,6 @@ public class Animation0 extends AddParticules {
         }
 
     }
-
-//    private Line createVitesseImg(Particule2D p) {
-//        // line vitesse
-//        float n = (float) p.v.magnitude();
-//        float nx = (float) (p.X.x + ds * p.v.x / n);
-//        float ny = (float) (p.X.y + ds * p.v.y / n);
-//
-//        Line l = new Line(p.X.x, p.X.y, nx, ny);
-//        l.setStroke(ds_color);
-//        l.setStrokeWidth(ds_ep);
-//        return l;
-//
-//    }
 
     private Image createImage(Node node) {
         WritableImage wi;
